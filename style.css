@@ -1,0 +1,161 @@
+body{
+  background-image: url("images/background1.jpg");
+  background-size: cover;
+  /* background-color: rgb(240, 240, 233); */
+  margin: 0px;
+  padding: 0px;
+}
+
+header{
+  position: relative;
+  text-align: center;
+  height: 375px;
+  color: white;
+}
+header img{
+  height: 100%;
+  width: 100%;
+}
+header h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav{
+  background-color: rgb(100, 144, 181);
+  padding: 8px;
+}
+nav a{
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  scroll-behavior: smooth;
+}
+
+#aboutme{
+  position: relative;
+  left: 50%;
+  width: 800px;
+  height: 500px;
+  top: 50px;
+  padding: 10px;
+  border: 5px;
+  border-style: hidden;
+  transform: translate(-50%, 0);
+  background-color: rgb(212, 232, 179);
+}
+#aboutme img{
+  position: absolute;
+  width: 50%;
+  height:100%;
+  left: 50%;
+  top: 0px;
+}
+#aboutme p{
+  position: relative;
+  width: 45%;
+  line-height: 40px;
+}
+
+.Heading{
+  position: relative;
+  width: 1300px;
+  top: 100px;
+  margin-left: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(161, 114, 53);
+}
+
+.Container{
+  position: relative;
+  top: 75px;
+  display: flex;
+}
+
+.Tile-Title{
+  position: relative;
+  top: 25px;
+  width: 125px;
+  height: 125px;
+  margin-left: 50px;
+}
+
+.Flip-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+
+}
+
+.Tile-Title:hover .Flip-card {
+  transform: rotateY(180deg);
+}
+
+.Flip-card-front, .Flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+}
+
+.Flip-card-back {
+  background-color: transparent;
+  transform: rotateY(180deg);
+}
+
+.text-box{
+  position: absolute;
+  background-image: url("images/pattern.jpg");
+  font-weight: bold;
+  width: 100%;
+  height: 25px;
+  border-style: solid;
+  border-radius: 25%;
+  border-color: rgb(11, 16, 87);
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+
+#courses{
+  position: relative;
+  top: 100px;
+}
+#projects{
+  position:relative;
+  top: 200px;
+}
+
+
+footer{
+  position:relative;
+  top: 400px;
+  height: 400px;
+  background-color: rgba(232, 220, 172, 0.6);
+}
+
+#feedback{
+  position: absolute;
+  top: 0px;
+  margin-left: 10px;
+}
+
+#contact{
+  position: absolute;
+  left: 70%;
+  margin-left: 10px;
+}
+#contact a{
+  margin-left: 20px;
+}
+#contact img{
+  width: 50px;
+}
